@@ -1,0 +1,11 @@
+/run/media/root/687E-3B7D/clion-2022.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/run/media/root/687E-3B7D/clion-2022.2.3/bin/ninja/linux/ninja -G Ninja -S /run/media/root/687E-3B7D/Project/code/server -B /run/media/root/687E-3B7D/Project/code/server/cmake-build-debug
+-- The C compiler identification is GNU 12.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found Doxygen: /usr/bin/doxygen (found version "1.9.1") found components: doxygen dot dia missing components: mscgen
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /run/media/root/687E-3B7D/Project/code/server/cmake-build-debug

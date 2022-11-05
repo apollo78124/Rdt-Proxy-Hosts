@@ -1,0 +1,14 @@
+# ninja log v5
+0	146	0	CMakeFiles/doxygen	20ddc5c98f7471f5
+0	146	0	/run/media/root/687E-3B7D/Project/code/client/cmake-build-debug/CMakeFiles/doxygen	20ddc5c98f7471f5
+147	356	1667526020580000000	CMakeFiles/v4.dir/src/error.c.o	c2d3502978670060
+146	356	1667526020580000000	CMakeFiles/v4.dir/src/conversion.c.o	d9abd11204bdfe33
+147	357	1667526020580000000	CMakeFiles/v4.dir/src/copy.c.o	714b5910060527c0
+146	527	1667526020750000000	CMakeFiles/v4.dir/src/main.c.o	fc9fd3863b45e9
+527	572	1667526020800000000	v4	5256edbed469dadc
+0	36	0	CMakeFiles/doxygen	20ddc5c98f7471f5
+0	36	0	/run/media/root/687E-3B7D/Project/code/client/cmake-build-debug/CMakeFiles/doxygen	20ddc5c98f7471f5
+0	53	0	CMakeFiles/doxygen	20ddc5c98f7471f5
+0	53	0	/run/media/root/687E-3B7D/Project/code/client/cmake-build-debug/CMakeFiles/doxygen	20ddc5c98f7471f5
+0	36	0	CMakeFiles/doxygen	20ddc5c98f7471f5
+0	36	0	/run/media/root/687E-3B7D/Project/code/client/cmake-build-debug/CMakeFiles/doxygen	20ddc5c98f7471f5
