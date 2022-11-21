@@ -36,7 +36,3 @@ void copy(int from_fd, int to_fd, size_t count)
 
     free(buffer);
 }
-
-char* processHeader(char *rawData) {
-
-}

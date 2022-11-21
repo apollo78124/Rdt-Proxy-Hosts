@@ -1,4 +1,0 @@
-/run/media/root/687E-3B7D/CProject/v4/build/CMakeFiles/doxygen.dir
-/run/media/root/687E-3B7D/CProject/v4/build/CMakeFiles/v4.dir
-/run/media/root/687E-3B7D/CProject/v4/build/CMakeFiles/edit_cache.dir
-/run/media/root/687E-3B7D/CProject/v4/build/CMakeFiles/rebuild_cache.dir

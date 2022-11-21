@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: v4
+# Project: v5
 # Configurations: Debug
 # =============================================================================
 
@@ -47,71 +47,71 @@ cmake_ninja_workdir = /run/media/root/687E-3B7D/Project/code/server/cmake-build-
 build doxygen: phony CMakeFiles/doxygen
 
 # =============================================================================
-# Object build statements for EXECUTABLE target v4
+# Object build statements for EXECUTABLE target v5
 
 
 #############################################
-# Order-only phony target for v4
+# Order-only phony target for v5
 
-build cmake_object_order_depends_target_v4: phony || doxygen
+build cmake_object_order_depends_target_v5: phony || doxygen
 
-build CMakeFiles/v4.dir/src/main.c.o: C_COMPILER__v4_Debug /run/media/root/687E-3B7D/Project/code/server/src/main.c || cmake_object_order_depends_target_v4
+build CMakeFiles/v5.dir/src/main.c.o: C_COMPILER__v5_Debug /run/media/root/687E-3B7D/Project/code/server/src/main.c || cmake_object_order_depends_target_v5
   DEFINES = -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700
-  DEP_FILE = CMakeFiles/v4.dir/src/main.c.o.d
+  DEP_FILE = CMakeFiles/v5.dir/src/main.c.o.d
   FLAGS = -g -Wall -Wextra -Wpedantic -Wshadow -Wstrict-overflow=4 -Wswitch-default -Wswitch-enum -Wunused -Wunused-macros -Wdate-time -Winvalid-pch -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wstrict-prototypes -Wundef -Wnull-dereference -Wstack-protector -Wdouble-promotion -Wvla -Walloca -Woverlength-strings -Wdisabled-optimization -Winline -Wcast-qual -Wfloat-equal -Wformat=2 -Wfree-nonheap-object -Wshift-overflow -Wwrite-strings -fsanitize=address -fsanitize=leak -fsanitize=undefined -fsanitize-address-use-after-scope -fstack-protector-all -fdelete-null-pointer-checks -fno-omit-frame-pointer -Wcast-align -Wunsuffixed-float-constants -Warith-conversion -Wcast-align=strict -Wunsafe-loop-optimizations -Wvector-operation-performance -Walloc-zero -Wtrampolines -Wtsan -Wformat-overflow=2 -Wformat-signedness -Wjump-misses-init -Wformat-truncation=2
   INCLUDES = -I/run/media/root/687E-3B7D/Project/code/server/include
-  OBJECT_DIR = CMakeFiles/v4.dir
-  OBJECT_FILE_DIR = CMakeFiles/v4.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/v4.dir/
-  TARGET_PDB = v4.pdb
+  OBJECT_DIR = CMakeFiles/v5.dir
+  OBJECT_FILE_DIR = CMakeFiles/v5.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/v5.dir/
+  TARGET_PDB = v5.pdb
 
-build CMakeFiles/v4.dir/src/conversion.c.o: C_COMPILER__v4_Debug /run/media/root/687E-3B7D/Project/code/server/src/conversion.c || cmake_object_order_depends_target_v4
+build CMakeFiles/v5.dir/src/conversion.c.o: C_COMPILER__v5_Debug /run/media/root/687E-3B7D/Project/code/server/src/conversion.c || cmake_object_order_depends_target_v5
   DEFINES = -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700
-  DEP_FILE = CMakeFiles/v4.dir/src/conversion.c.o.d
+  DEP_FILE = CMakeFiles/v5.dir/src/conversion.c.o.d
   FLAGS = -g -Wall -Wextra -Wpedantic -Wshadow -Wstrict-overflow=4 -Wswitch-default -Wswitch-enum -Wunused -Wunused-macros -Wdate-time -Winvalid-pch -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wstrict-prototypes -Wundef -Wnull-dereference -Wstack-protector -Wdouble-promotion -Wvla -Walloca -Woverlength-strings -Wdisabled-optimization -Winline -Wcast-qual -Wfloat-equal -Wformat=2 -Wfree-nonheap-object -Wshift-overflow -Wwrite-strings -fsanitize=address -fsanitize=leak -fsanitize=undefined -fsanitize-address-use-after-scope -fstack-protector-all -fdelete-null-pointer-checks -fno-omit-frame-pointer -Wcast-align -Wunsuffixed-float-constants -Warith-conversion -Wcast-align=strict -Wunsafe-loop-optimizations -Wvector-operation-performance -Walloc-zero -Wtrampolines -Wtsan -Wformat-overflow=2 -Wformat-signedness -Wjump-misses-init -Wformat-truncation=2
   INCLUDES = -I/run/media/root/687E-3B7D/Project/code/server/include
-  OBJECT_DIR = CMakeFiles/v4.dir
-  OBJECT_FILE_DIR = CMakeFiles/v4.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/v4.dir/
-  TARGET_PDB = v4.pdb
+  OBJECT_DIR = CMakeFiles/v5.dir
+  OBJECT_FILE_DIR = CMakeFiles/v5.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/v5.dir/
+  TARGET_PDB = v5.pdb
 
-build CMakeFiles/v4.dir/src/copy.c.o: C_COMPILER__v4_Debug /run/media/root/687E-3B7D/Project/code/server/src/copy.c || cmake_object_order_depends_target_v4
+build CMakeFiles/v5.dir/src/copy.c.o: C_COMPILER__v5_Debug /run/media/root/687E-3B7D/Project/code/server/src/copy.c || cmake_object_order_depends_target_v5
   DEFINES = -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700
-  DEP_FILE = CMakeFiles/v4.dir/src/copy.c.o.d
+  DEP_FILE = CMakeFiles/v5.dir/src/copy.c.o.d
   FLAGS = -g -Wall -Wextra -Wpedantic -Wshadow -Wstrict-overflow=4 -Wswitch-default -Wswitch-enum -Wunused -Wunused-macros -Wdate-time -Winvalid-pch -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wstrict-prototypes -Wundef -Wnull-dereference -Wstack-protector -Wdouble-promotion -Wvla -Walloca -Woverlength-strings -Wdisabled-optimization -Winline -Wcast-qual -Wfloat-equal -Wformat=2 -Wfree-nonheap-object -Wshift-overflow -Wwrite-strings -fsanitize=address -fsanitize=leak -fsanitize=undefined -fsanitize-address-use-after-scope -fstack-protector-all -fdelete-null-pointer-checks -fno-omit-frame-pointer -Wcast-align -Wunsuffixed-float-constants -Warith-conversion -Wcast-align=strict -Wunsafe-loop-optimizations -Wvector-operation-performance -Walloc-zero -Wtrampolines -Wtsan -Wformat-overflow=2 -Wformat-signedness -Wjump-misses-init -Wformat-truncation=2
   INCLUDES = -I/run/media/root/687E-3B7D/Project/code/server/include
-  OBJECT_DIR = CMakeFiles/v4.dir
-  OBJECT_FILE_DIR = CMakeFiles/v4.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/v4.dir/
-  TARGET_PDB = v4.pdb
+  OBJECT_DIR = CMakeFiles/v5.dir
+  OBJECT_FILE_DIR = CMakeFiles/v5.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/v5.dir/
+  TARGET_PDB = v5.pdb
 
-build CMakeFiles/v4.dir/src/error.c.o: C_COMPILER__v4_Debug /run/media/root/687E-3B7D/Project/code/server/src/error.c || cmake_object_order_depends_target_v4
+build CMakeFiles/v5.dir/src/error.c.o: C_COMPILER__v5_Debug /run/media/root/687E-3B7D/Project/code/server/src/error.c || cmake_object_order_depends_target_v5
   DEFINES = -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700
-  DEP_FILE = CMakeFiles/v4.dir/src/error.c.o.d
+  DEP_FILE = CMakeFiles/v5.dir/src/error.c.o.d
   FLAGS = -g -Wall -Wextra -Wpedantic -Wshadow -Wstrict-overflow=4 -Wswitch-default -Wswitch-enum -Wunused -Wunused-macros -Wdate-time -Winvalid-pch -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wstrict-prototypes -Wundef -Wnull-dereference -Wstack-protector -Wdouble-promotion -Wvla -Walloca -Woverlength-strings -Wdisabled-optimization -Winline -Wcast-qual -Wfloat-equal -Wformat=2 -Wfree-nonheap-object -Wshift-overflow -Wwrite-strings -fsanitize=address -fsanitize=leak -fsanitize=undefined -fsanitize-address-use-after-scope -fstack-protector-all -fdelete-null-pointer-checks -fno-omit-frame-pointer -Wcast-align -Wunsuffixed-float-constants -Warith-conversion -Wcast-align=strict -Wunsafe-loop-optimizations -Wvector-operation-performance -Walloc-zero -Wtrampolines -Wtsan -Wformat-overflow=2 -Wformat-signedness -Wjump-misses-init -Wformat-truncation=2
   INCLUDES = -I/run/media/root/687E-3B7D/Project/code/server/include
-  OBJECT_DIR = CMakeFiles/v4.dir
-  OBJECT_FILE_DIR = CMakeFiles/v4.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/v4.dir/
-  TARGET_PDB = v4.pdb
+  OBJECT_DIR = CMakeFiles/v5.dir
+  OBJECT_FILE_DIR = CMakeFiles/v5.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/v5.dir/
+  TARGET_PDB = v5.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target v4
+# Link build statements for EXECUTABLE target v5
 
 
 #############################################
-# Link the executable v4
+# Link the executable v5
 
-build v4: C_EXECUTABLE_LINKER__v4_Debug CMakeFiles/v4.dir/src/main.c.o CMakeFiles/v4.dir/src/conversion.c.o CMakeFiles/v4.dir/src/copy.c.o CMakeFiles/v4.dir/src/error.c.o || doxygen
+build v5: C_EXECUTABLE_LINKER__v5_Debug CMakeFiles/v5.dir/src/main.c.o CMakeFiles/v5.dir/src/conversion.c.o CMakeFiles/v5.dir/src/copy.c.o CMakeFiles/v5.dir/src/error.c.o || doxygen
   FLAGS = -g
   LINK_FLAGS = -fsanitize=address -fsanitize=bounds
-  OBJECT_DIR = CMakeFiles/v4.dir
+  OBJECT_DIR = CMakeFiles/v5.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/v4.dir/
-  TARGET_FILE = v4
-  TARGET_PDB = v4.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/v5.dir/
+  TARGET_FILE = v5
+  TARGET_PDB = v5.pdb
 
 
 #############################################
@@ -156,7 +156,7 @@ build CMakeFiles/doxygen | ${cmake_ninja_workdir}CMakeFiles/doxygen: CUSTOM_COMM
 #############################################
 # Folder: /run/media/root/687E-3B7D/Project/code/server/cmake-build-debug
 
-build all: phony v4
+build all: phony v5
 
 # =============================================================================
 # Built-in targets

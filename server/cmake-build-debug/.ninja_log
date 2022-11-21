@@ -1,10 +1,12 @@
 # ninja log v5
-0	193	0	CMakeFiles/doxygen	8fcb4b70ebc304f7
-0	193	0	/run/media/root/687E-3B7D/Project/code/server/cmake-build-debug/CMakeFiles/doxygen	8fcb4b70ebc304f7
-194	340	1667526153440000000	CMakeFiles/v4.dir/src/error.c.o	dfb9eb0d42e16cfc
-193	342	1667526153440000000	CMakeFiles/v4.dir/src/conversion.c.o	d01f479663db77be
-194	363	1667526153460000000	CMakeFiles/v4.dir/src/copy.c.o	78311e2dc6983a90
-193	528	1667526153620000000	CMakeFiles/v4.dir/src/main.c.o	d4a73f17df0efa40
-528	567	1667526153660000000	v4	5256edbed469dadc
-1	37	0	CMakeFiles/doxygen	8fcb4b70ebc304f7
-1	37	0	/run/media/root/687E-3B7D/Project/code/server/cmake-build-debug/CMakeFiles/doxygen	8fcb4b70ebc304f7
+0	152	0	CMakeFiles/doxygen	8fcb4b70ebc304f7
+0	152	0	/run/media/root/687E-3B7D/Project/code/server/cmake-build-debug/CMakeFiles/doxygen	8fcb4b70ebc304f7
+153	355	1669019081490000000	CMakeFiles/v5.dir/src/error.c.o	f1249c50f111ed64
+152	360	1669019081490000000	CMakeFiles/v5.dir/src/conversion.c.o	ab5f6ec654e9472f
+153	366	1669019081500000000	CMakeFiles/v5.dir/src/copy.c.o	3bb36cb94ea63f68
+152	615	1669019081750000000	CMakeFiles/v5.dir/src/main.c.o	806621caec9e5c31
+615	655	1669019081790000000	v5	8f1ef7d92e1f55b4
+0	37	0	CMakeFiles/doxygen	8fcb4b70ebc304f7
+0	37	0	/run/media/root/687E-3B7D/Project/code/server/cmake-build-debug/CMakeFiles/doxygen	8fcb4b70ebc304f7
+0	38	0	CMakeFiles/doxygen	8fcb4b70ebc304f7
+0	38	0	/run/media/root/687E-3B7D/Project/code/server/cmake-build-debug/CMakeFiles/doxygen	8fcb4b70ebc304f7
