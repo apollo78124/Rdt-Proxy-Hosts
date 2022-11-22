@@ -28,6 +28,9 @@ void copy(int from_fd, int to_fd, size_t count)
     char receivedPacket[2041 + 1] = {0};
     ssize_t rbytes;
     ssize_t wbytes;
+    int sentDataBytes = 0;
+    int receivedDataBytes = 0;
+    struct Packet clientReceiveBuffer[25] = {0};
 
     while((rbytes = read(from_fd, dataToSend, count)) > 0)
     {
@@ -36,7 +39,7 @@ void copy(int from_fd, int to_fd, size_t count)
         /**
          * Make packet header
          */
-         strcpy (outboundPacket, makePacketHeader(synFlag, 1, 1, 58789, dataToSend));
+         strcpy (outboundPacket, makePacketHeader(synFlag, sentDataBytes, receivedDataBytes, 58789, dataToSend));
 
 
         /**
@@ -49,6 +52,20 @@ void copy(int from_fd, int to_fd, size_t count)
          */
         rbytes = read(to_fd, receivedPacket, count);
         printf("%s\n", receivedPacket);
+
+        /**
+         * Process ack packet header
+         */
+        processPacketHeader1(receivedPacket, clientReceiveBuffer);
+        sentDataBytes = clientReceiveBuffer[0].ack;
+        if (strlen(clientReceiveBuffer->data) == clientReceiveBuffer->dataLength) {
+            receivedDataBytes += strlen(clientReceiveBuffer->data);
+        } else {
+            /**
+             * data corrupted action
+             */
+            printf("Packet corrupted\n", receivedPacket);
+        }
 
         memset(dataToSend,0,strlen(dataToSend));
         memset(outboundPacket,0,strlen(outboundPacket));

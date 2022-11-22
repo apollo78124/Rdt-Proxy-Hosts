@@ -25,13 +25,11 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/v5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/v5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/v5" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/v5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/copy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669019214540</updated>
       <workItem from="1669019215705" duration="475000" />
-      <workItem from="1669094679526" duration="5793000" />
+      <workItem from="1669094679526" duration="7100000" />
     </task>
     <servers />
   </component>
@@ -123,7 +121,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/copy.c</url>
-          <line>50</line>
+          <line>53</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

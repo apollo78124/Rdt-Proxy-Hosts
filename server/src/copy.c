@@ -22,14 +22,14 @@ void processPacketHeader1(char *packet1, struct Packet *clientReceiveBuffer1);
 void copy(int from_fd, int to_fd, size_t count)
 {
 
-    ssize_t bytesReceived = 0;
-    ssize_t bytesSent = 0;
+    int bytesReceived = 0;
+    int bytesSent = 1;
     char receivedPacket[2041+1] = {0};
     char dataToSend[1981] = {0};
     ssize_t rbytes;
     ssize_t wbytes;
     char ackPacket[2041+1] = {0};
-    struct Packet clientReceiveBuffer[255] = {0};
+    struct Packet clientReceiveBuffer[25] = {0};
 
     while((rbytes = read(from_fd, receivedPacket, count)) > 0)
     {
@@ -37,6 +37,14 @@ void copy(int from_fd, int to_fd, size_t count)
          * Parse received packet header to struct
          */
         processPacketHeader1(receivedPacket, clientReceiveBuffer);
+        if (strlen(clientReceiveBuffer->data) == clientReceiveBuffer->dataLength) {
+            bytesReceived += clientReceiveBuffer[0].dataLength;
+        } else {
+            /**
+             * data corrupted action
+             */
+            printf("Packet corrupted\n", receivedPacket);
+        }
 
         /**
          * Make use of received packet
@@ -47,8 +55,8 @@ void copy(int from_fd, int to_fd, size_t count)
         /**
          * Make ack packet
          */
-        strcpy(dataToSend, "RandomData");
-        strcpy (ackPacket, makePacketHeader(ackFlag, 1, 1, 58789, dataToSend));
+        strcpy(dataToSend, "");
+        strcpy (ackPacket, makePacketHeader(ackFlag, bytesSent, bytesReceived, 1, dataToSend));
 
         /**
          * Send Ack to client
