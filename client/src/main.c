@@ -34,7 +34,7 @@ static void set_signal_handling(struct sigaction *sa);
 static void signal_handler(int sig);
 
 
-#define DEFAULT_BUF_SIZE 1024
+#define DEFAULT_BUF_SIZE 2042
 #define DEFAULT_PORT 5000
 #define BACKLOG 5
 

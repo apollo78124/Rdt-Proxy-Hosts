@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="v5" targetName="v5" />
+      <config projectName="v5" targetName="doxygen" />
+    </generated>
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
@@ -10,491 +19,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2db2b558-86bc-4ed7-a5ea-bb9e403cc0eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/v1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../client/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeDoxyfile.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeDoxygenDefaults.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/3.24.0/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/3.24.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/3.24.0/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/3.24.0/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/3.24.0/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/cmake_directory_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/doxygen.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/doxygen.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/doxygen.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/doxygen.dir/compiler_depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/doxygen.dir/compiler_depend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/doxygen.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/compiler_depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/compiler_depend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/src/conversion.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/src/conversion.c.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/src/copy.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/src/copy.c.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/src/error.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/src/error.c.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/src/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/CMakeFiles/v4.dir/src/main.c.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/Doxyfile.doxygen" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/compile_commands.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/bc_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/bdwn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/closed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/conversion_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/conversion_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/conversion_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/conversion_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/conversion_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/copy_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/copy_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/copy_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/copy_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/copy_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/dir_d44c64559bbebec7f509842c48db8b23.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/doxygen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/doxygen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/dynsections.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/error_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/error_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/error_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/error_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/error_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/files.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/folderclosed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/folderopen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/globals.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/globals_func.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/graph_legend.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/graph_legend.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/graph_legend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/menudata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/nav_f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/nav_g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/nav_h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/all_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/all_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/all_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/all_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/all_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/all_2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/all_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/all_3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/files_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/files_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/files_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/files_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/functions_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/functions_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/functions_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/functions_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/functions_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/functions_2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/mag_sel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/nomatches.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/search_l.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/search_m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/search_r.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/search/searchdata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/splitbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/sync_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/sync_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/tab_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/tab_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/tab_h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/tab_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/html/tabs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/build/v4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/cache-v2-7a85fb328497d3e18e64.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-e2d6a4bbd74e98621492.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-4d10d555cf82fcb956ec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-04T01-34-19-0858.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/target-doxygen-Debug-7c3a3f77a0b2fb66cd05.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/target-v4-Debug-7bfd25d2ce12a67541d7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-f7072d84e2deb5afc2b3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeDoxyfile.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeDoxygenDefaults.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clean_additional.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/v4.dir/src/conversion.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/v4.dir/src/copy.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/v4.dir/src/error.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/v4.dir/src/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/Doxyfile.doxygen" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/compile_commands.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/bc_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/bdwn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/closed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/conversion_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/conversion_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/conversion_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/conversion_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/conversion_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/copy_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/copy_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/copy_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/copy_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/copy_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/dir_d44c64559bbebec7f509842c48db8b23.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/doxygen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/doxygen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/dynsections.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/error_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/error_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/error_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/error_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/error_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/files.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/folderclosed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/folderopen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/globals.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/globals_func.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/graph_legend.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/graph_legend.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/graph_legend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/menudata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/nav_f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/nav_g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/nav_h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/all_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/all_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/all_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/all_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/all_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/all_2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/all_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/all_3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/files_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/files_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/files_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/files_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/functions_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/functions_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/functions_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/functions_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/functions_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/functions_2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/mag_sel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/nomatches.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/search_l.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/search_m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/search_r.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/search/searchdata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/splitbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/sync_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/sync_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/tab_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/tab_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/tab_h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/tab_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/html/tabs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/v4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/include/conversion.h" beforeDir="false" afterPath="$PROJECT_DIR$/../client/include/conversion.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/include/copy.h" beforeDir="false" afterPath="$PROJECT_DIR$/../client/include/copy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/conversion.c" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/conversion.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-21T08-26-58-0866.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/v5" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/v5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/copy.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/v1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeDoxyfile.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeDoxygenDefaults.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.24.0/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.24.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.24.0/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.24.0/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.24.0/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake_directory_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/doxygen.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/doxygen.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/doxygen.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/doxygen.dir/compiler_depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/doxygen.dir/compiler_depend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/doxygen.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/compiler_depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/compiler_depend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/src/conversion.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/src/conversion.c.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/src/copy.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/src/copy.c.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/src/error.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/src/error.c.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/src/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/v4.dir/src/main.c.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Doxyfile.doxygen" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/compile_commands.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/bc_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/bdwn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/closed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/conversion_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/conversion_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/conversion_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/conversion_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/conversion_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/copy_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/copy_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/copy_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/copy_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/copy_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/dir_d44c64559bbebec7f509842c48db8b23.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/doxygen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/doxygen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/dynsections.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/error_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/error_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/error_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/error_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/error_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/files.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/folderclosed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/folderopen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/globals.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/globals_func.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/graph_legend.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/graph_legend.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/graph_legend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/menudata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/nav_f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/nav_g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/nav_h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/all_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/all_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/all_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/all_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/all_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/all_2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/all_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/all_3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/files_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/files_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/files_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/files_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/functions_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/functions_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/functions_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/functions_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/functions_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/functions_2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/mag_sel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/nomatches.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/search_l.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/search_m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/search_r.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search/searchdata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/splitbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/sync_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/sync_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/tab_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/tab_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/tab_h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/tab_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/tabs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/v4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-a503db849e3d5d46b512.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-5678b35686a29be45102.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c2bc34a399d16ffb428f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-04T01-41-47-0994.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-doxygen-Debug-7c3a3f77a0b2fb66cd05.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-v4-Debug-d10658a1c71ff1a0b816.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-f7072d84e2deb5afc2b3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeDoxyfile.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeDoxygenDefaults.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clean_additional.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v4.dir/src/conversion.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v4.dir/src/copy.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v4.dir/src/error.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v4.dir/src/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Doxyfile.doxygen" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/bc_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/bdwn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/closed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/conversion_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/conversion_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/conversion_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/conversion_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/conversion_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/copy_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/copy_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/copy_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/copy_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/copy_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/dir_d44c64559bbebec7f509842c48db8b23.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/doxygen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/doxygen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/dynsections.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/error_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/error_8h__incl.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/error_8h__incl.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/error_8h__incl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/error_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/files.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/folderclosed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/folderopen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/globals.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/globals_func.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/graph_legend.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/graph_legend.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/graph_legend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/menudata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/nav_f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/nav_g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/nav_h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/all_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/all_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/all_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/all_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/all_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/all_2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/all_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/all_3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/files_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/files_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/files_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/files_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/functions_0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/functions_0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/functions_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/functions_1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/functions_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/functions_2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/mag_sel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/nomatches.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/search_l.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/search_m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/search_r.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/search/searchdata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/splitbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/sync_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/sync_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/tab_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/tab_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/tab_h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/tab_s.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html/tabs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/v4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/conversion.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/conversion.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/conversion.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/conversion.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/v5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/v5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -505,8 +45,12 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -524,16 +68,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/run/media/root/687E-3B7D/Project/code/server"
+    "last_opened_file_path": "/run/media/root/687E-3B7D/CProject/CLibrary"
   }
 }]]></component>
   <component name="RunManager" selected="CMake Application.v5">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="v5" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
@@ -559,7 +104,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669019043299</updated>
-      <workItem from="1669019045070" duration="2000" />
+      <workItem from="1669019045070" duration="647000" />
+      <workItem from="1669094856028" duration="6365000" />
     </task>
     <servers />
   </component>
@@ -576,5 +122,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/copy.c</url>
+          <line>54</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
