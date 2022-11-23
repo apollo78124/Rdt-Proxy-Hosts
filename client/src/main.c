@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <bits/types/struct_timeval.h>
 
 
 struct options
@@ -241,6 +242,11 @@ static void options_process(struct options *opts)
         {
             fatal_errno(__FILE__, __func__ , __LINE__, errno, 2);
         }
+
+        struct timeval tv;
+        tv.tv_sec = 5;
+        tv.tv_usec = 0;
+        setsockopt(opts->fd_out, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 
         result = connect(opts->fd_out, (struct sockaddr *)&addr, sizeof(struct sockaddr_in));
 

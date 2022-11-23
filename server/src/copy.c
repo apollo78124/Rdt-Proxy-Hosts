@@ -23,6 +23,8 @@ void copy(int from_fd, int to_fd, size_t count)
 {
 
     int bytesReceived = 0;
+    int receivedPackets = 0;
+    int duplicatePackets = 0;
     int bytesSent = 1;
     char receivedPacket[2041+1] = {0};
     char dataToSend[1981] = {0};
@@ -33,12 +35,21 @@ void copy(int from_fd, int to_fd, size_t count)
 
     while((rbytes = read(from_fd, receivedPacket, count)) > 0)
     {
+        receivedPackets++;
         /**
          * Parse received packet header to struct
          */
         processPacketHeader1(receivedPacket, clientReceiveBuffer);
-        if (strlen(clientReceiveBuffer->data) == clientReceiveBuffer->dataLength) {
-            bytesReceived += clientReceiveBuffer[0].dataLength;
+        if (strlen(clientReceiveBuffer[0].data) == clientReceiveBuffer[0].dataLength) { //Check if data is corrupted
+            if (clientReceiveBuffer[0].seq == bytesReceived) { //Check if sequence is in order
+                bytesReceived += clientReceiveBuffer[0].dataLength;
+                 /**
+                 * Make use of received packet
+                 */
+                printf("Received : \n%s", receivedPacket);
+            } else {
+                duplicatePackets++;
+            }
         } else {
             /**
              * data corrupted action
@@ -46,10 +57,7 @@ void copy(int from_fd, int to_fd, size_t count)
             printf("Packet corrupted\n", receivedPacket);
         }
 
-        /**
-         * Make use of received packet
-         */
-        printf("Received : \n%s\n", receivedPacket);
+
 
 
         /**
@@ -62,6 +70,11 @@ void copy(int from_fd, int to_fd, size_t count)
          * Send Ack to client
          */
         wbytes = write(from_fd, ackPacket, strlen(ackPacket));
+
+        printf("Received and acked data: %d bytes; ", bytesReceived);
+        printf("Received packets: %d; ", receivedPackets);
+        printf("%d / %d duplicate packets received; \n", duplicatePackets, receivedPackets);
+
         memset(receivedPacket,0,strlen(receivedPacket));
         memset(ackPacket,0,strlen(ackPacket));
         if(wbytes == -1)
@@ -74,9 +87,6 @@ void copy(int from_fd, int to_fd, size_t count)
     {
         fatal_errno(__FILE__, __func__ , __LINE__, errno, 3);
     }
-
-    free(receivedPacket);
-    free(ackPacket);
 }
 
 /**

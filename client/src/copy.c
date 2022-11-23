@@ -29,35 +29,49 @@ void copy(int from_fd, int to_fd, size_t count)
     ssize_t rbytes;
     ssize_t wbytes;
     int sentDataBytes = 0;
+    int ackedDataBytes = 0;
+    int sentPackets = 0;
+    int ackedPackets = 0;
+    int lostPackets = 0;
     int receivedDataBytes = 0;
     struct Packet clientReceiveBuffer[25] = {0};
 
-    while((rbytes = read(from_fd, dataToSend, count)) > 0)
+    while((rbytes = read(from_fd, dataToSend, 1980)) > 0)
     {
         rbytes = strlen(dataToSend) + 61 + 1;
 
         /**
          * Make packet header
          */
-         strcpy (outboundPacket, makePacketHeader(synFlag, sentDataBytes, receivedDataBytes, 58789, dataToSend));
+         strcpy (outboundPacket, makePacketHeader(synFlag, ackedDataBytes, receivedDataBytes, 1, dataToSend));
 
 
         /**
          * Send packet
          */
+        sendPacket:
         wbytes = write(to_fd, outboundPacket, strlen(outboundPacket));
+        sentDataBytes += strlen(dataToSend);
+        sentPackets = sentPackets + 1;
 
         /**
          * Wait for ack packet
          */
         rbytes = read(to_fd, receivedPacket, count);
+        if (rbytes < 0) {
+            lostPackets++;
+            printf("Acked / Sent  (%d / %d)bytes; ", ackedDataBytes, sentDataBytes);
+            printf("%d / %d packets successfully sent; ", ackedPackets, sentPackets);
+            printf("%d / %d packets lost\n", lostPackets, sentPackets);
+            goto sendPacket;
+        }
         printf("%s\n", receivedPacket);
 
         /**
          * Process ack packet header
          */
         processPacketHeader1(receivedPacket, clientReceiveBuffer);
-        sentDataBytes = clientReceiveBuffer[0].ack;
+        ackedDataBytes = clientReceiveBuffer[0].ack;
         if (strlen(clientReceiveBuffer->data) == clientReceiveBuffer->dataLength) {
             receivedDataBytes += strlen(clientReceiveBuffer->data);
         } else {
@@ -66,6 +80,24 @@ void copy(int from_fd, int to_fd, size_t count)
              */
             printf("Packet corrupted\n", receivedPacket);
         }
+
+        if (ackedDataBytes == sentDataBytes) {
+            /**
+             * This packet is acked successfully
+             */
+             ackedPackets = ackedPackets + 1;
+        } else {
+            /**
+             * Some data was lost, resend packet
+             * TODO: resend packet
+             */
+             goto sendPacket;
+            printf("Packet number %d lost; Send data: %d but acked %d\n", &sentPackets, &sentDataBytes, &ackedDataBytes);
+        }
+
+        printf("Acked / Sent  (%d / %d)bytes; ", ackedDataBytes, sentDataBytes);
+        printf("%d / %d packets successfully sent; ", ackedPackets, sentPackets);
+        printf("%d / %d packets lost\n", lostPackets, sentPackets);
 
         memset(dataToSend,0,strlen(dataToSend));
         memset(outboundPacket,0,strlen(outboundPacket));

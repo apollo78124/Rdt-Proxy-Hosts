@@ -20,11 +20,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2db2b558-86bc-4ed7-a5ea-bb9e403cc0eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-22T05-24-46-0710.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/v5" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/v5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/copy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
@@ -66,13 +68,13 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/run/media/root/687E-3B7D/CProject/CLibrary"
+    "last_opened_file_path": "/run/media/root/687E-3B7D/Project/code/server"
   }
 }]]></component>
   <component name="RunManager" selected="CMake Application.v5">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="v5" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
@@ -80,7 +82,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="v5" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-i 192.168.0.15" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="v5" TARGET_NAME="v5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="v5" RUN_TARGET_NAME="v5">
+    <configuration name="v5" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-i 192.168.0.14" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="v5" TARGET_NAME="v5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="v5" RUN_TARGET_NAME="v5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -99,7 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1669019043299</updated>
       <workItem from="1669019045070" duration="647000" />
-      <workItem from="1669094856028" duration="7560000" />
+      <workItem from="1669094856028" duration="7698000" />
+      <workItem from="1669169289212" duration="8445000" />
     </task>
     <servers />
   </component>
@@ -122,8 +125,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/copy.c</url>
-          <line>62</line>
-          <option name="timeStamp" value="18" />
+          <line>36</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/copy.c</url>
+          <line>89</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/copy.c</url>
+          <line>84</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
