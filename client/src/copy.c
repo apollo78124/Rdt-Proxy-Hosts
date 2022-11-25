@@ -18,7 +18,7 @@ struct Packet {
     char data[1981]
 };
 
-char* makePacketHeader(char* flag, int seq, int ack, int window, char* dataToSend);
+void makePacketHeader(char* flag, int seq, int ack, int window, char* dataToSend, char *packet);
 void processPacketHeader1(char *packet1, struct Packet *clientReceiveBuffer1);
 
 void copy(int from_fd, int to_fd, size_t count)
@@ -36,14 +36,16 @@ void copy(int from_fd, int to_fd, size_t count)
     int receivedDataBytes = 0;
     struct Packet clientReceiveBuffer[25] = {0};
 
-    while((rbytes = read(from_fd, dataToSend, 1980)) > 0)
+    while((rbytes = read(from_fd, dataToSend, 1979)) > 0)
     {
+        printf("\x1b[1F"); // Move to beginning of previous line
+        printf("\x1b[2K"); // Clear entire line
         rbytes = strlen(dataToSend) + 61 + 1;
 
         /**
          * Make packet header
          */
-         strcpy (outboundPacket, makePacketHeader(synFlag, ackedDataBytes, receivedDataBytes, 1, dataToSend));
+         makePacketHeader(synFlag, ackedDataBytes, receivedDataBytes, 1, dataToSend, outboundPacket);
 
 
         /**
@@ -58,22 +60,36 @@ void copy(int from_fd, int to_fd, size_t count)
          * Wait for ack packet
          */
         rbytes = read(to_fd, receivedPacket, count);
-        if (rbytes < 0) {
+        if (rbytes < 1) {
             lostPackets++;
-            printf("Acked / Sent  (%d / %d)bytes; ", ackedDataBytes, sentDataBytes);
-            printf("%d / %d packets successfully sent; ", ackedPackets, sentPackets);
-            printf("%d / %d packets lost\n", lostPackets, sentPackets);
+            printf("Timeout: ", ackedDataBytes, sentDataBytes);
+            printf("Packet seq=%d not acked;", ackedDataBytes);
+            printf("Packet no.%d not acked; \n", ackedPackets);
             goto sendPacket;
+        } else {
+            //printf("%s\n", receivedPacket);
         }
-        printf("%s\n", receivedPacket);
 
         /**
          * Process ack packet header
          */
         processPacketHeader1(receivedPacket, clientReceiveBuffer);
-        ackedDataBytes = clientReceiveBuffer[0].ack;
-        if (strlen(clientReceiveBuffer->data) == clientReceiveBuffer->dataLength) {
-            receivedDataBytes += strlen(clientReceiveBuffer->data);
+        if (clientReceiveBuffer[0].ack > ackedDataBytes) {
+            ackedDataBytes = clientReceiveBuffer[0].ack;
+            /**
+             * This packet is acked successfully
+             */
+            ackedPackets = ackedPackets + 1;
+        } else {
+            /**
+             * Some data was lost, resend packet
+             *
+             */
+            printf("Duplicate Ack %d detected and ignored\n", clientReceiveBuffer[0].ack);
+        }
+
+        if (strlen(clientReceiveBuffer[0].data) == clientReceiveBuffer[0].dataLength) {
+            receivedDataBytes += strlen(clientReceiveBuffer[0].data);
         } else {
             /**
              * data corrupted action
@@ -81,22 +97,9 @@ void copy(int from_fd, int to_fd, size_t count)
             printf("Packet corrupted\n", receivedPacket);
         }
 
-        if (ackedDataBytes == sentDataBytes) {
-            /**
-             * This packet is acked successfully
-             */
-             ackedPackets = ackedPackets + 1;
-        } else {
-            /**
-             * Some data was lost, resend packet
-             * TODO: resend packet
-             */
-             goto sendPacket;
-            printf("Packet number %d lost; Send data: %d but acked %d\n", &sentPackets, &sentDataBytes, &ackedDataBytes);
-        }
 
-        printf("Acked / Sent  (%d / %d)bytes; ", ackedDataBytes, sentDataBytes);
-        printf("%d / %d packets successfully sent; ", ackedPackets, sentPackets);
+        printf("Resent %d (bytes); ", sentDataBytes - ackedDataBytes);
+        printf("Resent %d (packets); ", sentPackets - ackedPackets);
         printf("%d / %d packets lost\n", lostPackets, sentPackets);
 
         memset(dataToSend,0,strlen(dataToSend));
@@ -126,7 +129,7 @@ void copy(int from_fd, int to_fd, size_t count)
  * Total 61 chars for packet header
  * Example header: 00000SYN00000000000125380000000000000001000020000000000058789
  */
-char* makePacketHeader(char* flag, int seq, int ack, int window, char* dataToSend) {
+void makePacketHeader(char* flag, int seq, int ack, int window, char* dataToSend, char *packet) {
 
     char packetHeader[61 + 1] = "0000000000000000000000000000000000000000000000000000000000000";
     int dataLength = strlen(dataToSend);
@@ -177,10 +180,8 @@ char* makePacketHeader(char* flag, int seq, int ack, int window, char* dataToSen
     packetHeader[61] = '\0';
     strcpy(resultingPacket, packetHeader);
     strcat(resultingPacket, dataToSend);
-    char * result = {0};
-    result = resultingPacket;
-    result[61 + dataLength] = '\0';
-    return result;
+
+    strcpy(packet, resultingPacket);
 }
 
 void processPacketHeader1(char *packet1, struct Packet *clientReceiveBuffer1) {

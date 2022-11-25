@@ -20,17 +20,24 @@
   <component name="ChangeListManager">
     <list default="true" id="d40dd9ed-0a91-4e9b-9e78-4ad40fb0aaa4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-23T01-52-23-0122.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v5.dir/src/copy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v5.dir/src/copy.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v5.dir/src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v5.dir/src/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/v5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/v5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-23T02-08-08-0447.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/v5.dir/src/copy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/v5.dir/src/copy.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/v5" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/v5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/copy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +77,9 @@
   }
 }]]></component>
   <component name="RunManager" selected="CMake Application.v5">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="v5" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
@@ -101,6 +108,9 @@
       <workItem from="1669019215705" duration="475000" />
       <workItem from="1669094679526" duration="7122000" />
       <workItem from="1669168335443" duration="10130000" />
+      <workItem from="1669256996923" duration="6178000" />
+      <workItem from="1669341854692" duration="3538000" />
+      <workItem from="1669349600084" duration="5819000" />
     </task>
     <servers />
   </component>
@@ -123,13 +133,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/copy.c</url>
-          <line>67</line>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/copy.c</url>
+          <line>133</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/copy.c</url>
-          <line>40</line>
-          <option name="timeStamp" value="4" />
+          <line>48</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

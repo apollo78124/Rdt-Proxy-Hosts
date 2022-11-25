@@ -6,6 +6,7 @@
 #include <string.h>
 #include <inttypes.h>
 #include <stdio.h>
+#include <time.h>
 
 const char *synFlag = "SYN";
 const char *ackFlag = "ACK";
@@ -19,6 +20,7 @@ struct Packet {
 };
 char* makePacketHeader(char* flag, int seq, int ack, int window, char* dataToSend);
 void processPacketHeader1(char *packet1, struct Packet *clientReceiveBuffer1);
+int getRandNum0To100 ();
 void copy(int from_fd, int to_fd, size_t count)
 {
 
@@ -32,30 +34,28 @@ void copy(int from_fd, int to_fd, size_t count)
     ssize_t wbytes;
     char ackPacket[2041+1] = {0};
     struct Packet clientReceiveBuffer[25] = {0};
-
-    while((rbytes = read(from_fd, receivedPacket, count)) > 0)
+    printf("Received messages:\n");
+    while((rbytes = read(from_fd, receivedPacket, 2041)) > 0)
     {
+        printf("\x1b[1F"); // Move to beginning of previous line
+        printf("\x1b[2K"); // Clear entire line
         receivedPackets++;
         /**
          * Parse received packet header to struct
          */
         processPacketHeader1(receivedPacket, clientReceiveBuffer);
-        if (strlen(clientReceiveBuffer[0].data) == clientReceiveBuffer[0].dataLength) { //Check if data is corrupted
+        //if (strlen(clientReceiveBuffer[0].data) == clientReceiveBuffer[0].dataLength) { //Check if data is corrupted
             if (clientReceiveBuffer[0].seq == bytesReceived) { //Check if sequence is in order
                 bytesReceived += clientReceiveBuffer[0].dataLength;
                  /**
                  * Make use of received packet
                  */
-                printf("Received : \n%s", receivedPacket);
+
+                printf("%s", clientReceiveBuffer[0].data);
             } else {
                 duplicatePackets++;
             }
-        } else {
-            /**
-             * data corrupted action
-             */
-            printf("Packet corrupted\n", receivedPacket);
-        }
+        //}
 
 
 
@@ -69,11 +69,15 @@ void copy(int from_fd, int to_fd, size_t count)
         /**
          * Send Ack to client
          */
-        wbytes = write(from_fd, ackPacket, strlen(ackPacket));
+         if (getRandNum0To100() > 70) {
+             wbytes = write(from_fd, ackPacket, strlen(ackPacket));
+         } else {
+             printf("Dropped packet ack for %d ack; \n", bytesReceived);
+         }
 
         printf("Received and acked data: %d bytes; ", bytesReceived);
         printf("Received packets: %d; ", receivedPackets);
-        printf("%d / %d duplicate packets received; \n", duplicatePackets, receivedPackets);
+        printf("%d / %d duplicate packets received;\n", duplicatePackets, receivedPackets);
 
         memset(receivedPacket,0,strlen(receivedPacket));
         memset(ackPacket,0,strlen(ackPacket));
@@ -81,6 +85,7 @@ void copy(int from_fd, int to_fd, size_t count)
         {
             fatal_errno(__FILE__, __func__ , __LINE__, errno, 4);
         }
+
     }
 
     if(rbytes == -1)
@@ -175,12 +180,19 @@ void processPacketHeader1(char *packet1, struct Packet *clientReceiveBuffer1) {
     tempPacket1.ack = strtoumax(ackTemp, NULL, 10);
     tempPacket1.dataLength = strtoumax(dataLengthTemp, NULL, 10);
     tempPacket1.windowNum = strtoumax(windowNumTemp, NULL, 10);
-    if (tempPacket1.dataLength < 1981) {
+    if (tempPacket1.dataLength < 1982) {
         strncpy(tempPacket1.data, packet1 + 61, tempPacket1.dataLength);
     } else {
         //Throw error
         fatal_message(__FILE__, __func__ , __LINE__, "Unexpected packet size", 6);
     }
     clientReceiveBuffer1[0] = tempPacket1;
+}
+
+int getRandNum0To100 () {
+    srand(time(0));
+    int i;
+    int num = (rand() % (100 - 1 + 1)) + 1;
+    return num;
 }
 

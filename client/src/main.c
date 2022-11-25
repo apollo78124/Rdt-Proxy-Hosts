@@ -38,6 +38,7 @@ static void signal_handler(int sig);
 #define DEFAULT_BUF_SIZE 2042
 #define DEFAULT_PORT 5000
 #define BACKLOG 5
+#define ACKTIMEOUT 1
 
 
 static volatile sig_atomic_t running;   // NOLINT(cppcoreguidelines-avoid-non-const-global-variables)
@@ -244,7 +245,7 @@ static void options_process(struct options *opts)
         }
 
         struct timeval tv;
-        tv.tv_sec = 5;
+        tv.tv_sec = ACKTIMEOUT;
         tv.tv_usec = 0;
         setsockopt(opts->fd_out, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 

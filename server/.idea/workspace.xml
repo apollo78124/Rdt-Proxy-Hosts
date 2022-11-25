@@ -20,18 +20,24 @@
   <component name="ChangeListManager">
     <list default="true" id="2db2b558-86bc-4ed7-a5ea-bb9e403cc0eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-22T05-24-46-0710.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-23T01-52-23-0122.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/v5.dir/src/copy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/v5.dir/src/copy.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/v5.dir/src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/v5.dir/src/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/v5" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/v5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/copy.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-23T02-08-08-0447.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v5.dir/src/copy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/v5.dir/src/copy.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/v5" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/v5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +78,9 @@
   }
 }]]></component>
   <component name="RunManager" selected="CMake Application.v5">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="v5" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
@@ -103,6 +109,9 @@
       <workItem from="1669019045070" duration="647000" />
       <workItem from="1669094856028" duration="7698000" />
       <workItem from="1669169289212" duration="8445000" />
+      <workItem from="1669257560070" duration="6151000" />
+      <workItem from="1669341799736" duration="3475000" />
+      <workItem from="1669349905073" duration="4411000" />
     </task>
     <servers />
   </component>
@@ -125,18 +134,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/copy.c</url>
-          <line>36</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/copy.c</url>
-          <line>89</line>
+          <line>94</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/copy.c</url>
-          <line>84</line>
+          <line>89</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/copy.c</url>
+          <line>45</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
