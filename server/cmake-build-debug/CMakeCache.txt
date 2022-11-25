@@ -116,7 +116,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=v4
+CMAKE_PROJECT_NAME:STATIC=v5
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.0.1
@@ -208,13 +208,13 @@ DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
 DOXYGEN_MSCGEN_EXECUTABLE:FILEPATH=DOXYGEN_MSCGEN_EXECUTABLE-NOTFOUND
 
 //Value Computed by CMake
-v4_BINARY_DIR:STATIC=/run/media/root/687E-3B7D/Project/code/server/cmake-build-debug
+v5_BINARY_DIR:STATIC=/run/media/root/687E-3B7D/Project/code/server/cmake-build-debug
 
 //Value Computed by CMake
-v4_IS_TOP_LEVEL:STATIC=ON
+v5_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-v4_SOURCE_DIR:STATIC=/run/media/root/687E-3B7D/Project/code/server
+v5_SOURCE_DIR:STATIC=/run/media/root/687E-3B7D/Project/code/server
 
 
 ########################

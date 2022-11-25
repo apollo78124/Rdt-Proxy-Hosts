@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(v4
+project(v5
         VERSION 0.0.1
         DESCRIPTION ""
         LANGUAGES C)
@@ -131,5 +131,5 @@ set(CLANG_TIDY_CHECKS "${CLANG_TIDY_CHECKS},-clang-analyzer-security.insecureAPI
 set(CLANG_TIDY_CHECKS "${CLANG_TIDY_CHECKS},-android-cloexec-accept")
 set(CMAKE_C_CLANG_TIDY clang-tidy -checks=${CLANG_TIDY_CHECKS};--quiet)
 
-add_executable(v4 ${SOURCE_LIST})
-add_dependencies(v4 doxygen)
+add_executable(v5 ${SOURCE_LIST})
+add_dependencies(v5 doxygen)

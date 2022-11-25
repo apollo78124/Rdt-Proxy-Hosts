@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: v4
+# Project: v5
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__v4_Debug
+rule C_COMPILER__v5_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /run/media/root/687E-3B7D/clion-2022.2.3/bin/cmake/linux/bin/cmake -E __run_co_compile --tidy="clang-tidy;-checks=*,-llvmlibc-restrict-system-libc-headers,-misc-unused-parameters,-clang-diagnostic-unused-parameter,-clang-diagnostic-unused-variable,-cppcoreguidelines-init-variables,-readability-identifier-length,-clang-diagnostic-unused-but-set-variable,-clang-analyzer-deadcode.DeadStores,-altera-id-dependent-backward-branch,-cert-dcl03-c,-hicpp-static-assert,-misc-static-assert,-altera-unroll-loops,-altera-struct-pack-align,-clang-analyzer-security.insecureAPI.strcpy,-bugprone-easily-swappable-parameters,-android-cloexec-open,-clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling,-android-cloexec-accept;--quiet;--extra-arg-before=--driver-mode=gcc" --source=$in -- /usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__v4_Debug
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__v4_Debug
+rule C_EXECUTABLE_LINKER__v5_Debug
   command = $PRE_LINK && /usr/bin/cc $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT

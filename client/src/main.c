@@ -6,10 +6,12 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <netinet/in.h>
+#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <bits/types/struct_timeval.h>
 
 
 struct options
@@ -20,8 +22,8 @@ struct options
     in_port_t port_in;
     in_port_t port_out;
     int fd_in;
-    int fd_in2;
     int fd_out;
+    size_t buffer_size;
 };
 
 
@@ -29,11 +31,17 @@ static void options_init(struct options *opts);
 static void parse_arguments(int argc, char *argv[], struct options *opts);
 static void options_process(struct options *opts);
 static void cleanup(const struct options *opts);
+static void set_signal_handling(struct sigaction *sa);
+static void signal_handler(int sig);
 
 
-#define BUF_SIZE 1024
+#define DEFAULT_BUF_SIZE 2042
 #define DEFAULT_PORT 5000
 #define BACKLOG 5
+
+
+static volatile sig_atomic_t running;   // NOLINT(cppcoreguidelines-avoid-non-const-global-variables)
+
 
 int main(int argc, char *argv[])
 {
@@ -42,7 +50,48 @@ int main(int argc, char *argv[])
     options_init(&opts);
     parse_arguments(argc, argv, &opts);
     options_process(&opts);
-    copy(opts.fd_in, opts.fd_out, BUF_SIZE);
+
+    if(opts.ip_in)
+    {
+        struct sigaction sa;
+
+        set_signal_handling(&sa);
+        running = 1;
+
+        while(running)
+        {
+            int fd;
+            struct sockaddr_in accept_addr;
+            socklen_t accept_addr_len;
+            char *accept_addr_str;
+            in_port_t accept_port;
+
+            accept_addr_len = sizeof(accept_addr);
+            fd = accept(opts.fd_in, (struct sockaddr *)&accept_addr, &accept_addr_len);
+
+            if(fd == -1)
+            {
+                if(errno == EINTR)
+                {
+                    break;
+                }
+
+                fatal_errno(__FILE__, __func__ , __LINE__, errno, 2);
+            }
+
+            accept_addr_str = inet_ntoa(accept_addr.sin_addr);  // NOLINT(concurrency-mt-unsafe)
+            accept_port = ntohs(accept_addr.sin_port);
+            printf("Accepted from %s:%d\n", accept_addr_str, accept_port);
+            copy(fd, opts.fd_out, opts.buffer_size);
+            printf("Closing %s:%d\n", accept_addr_str, accept_port);
+            close(fd);
+        }
+    }
+    else
+    {
+        copy(opts.fd_in, opts.fd_out, opts.buffer_size);
+    }
+
     cleanup(&opts);
 
     return EXIT_SUCCESS;
@@ -52,10 +101,11 @@ int main(int argc, char *argv[])
 static void options_init(struct options *opts)
 {
     memset(opts, 0, sizeof(struct options));
-    opts->fd_in    = STDIN_FILENO;
-    opts->fd_out   = STDOUT_FILENO;
-    opts->port_in  = DEFAULT_PORT;
-    opts->port_out = DEFAULT_PORT;
+    opts->fd_in       = STDIN_FILENO;
+    opts->fd_out      = STDOUT_FILENO;
+    opts->port_in     = DEFAULT_PORT;
+    opts->port_out    = DEFAULT_PORT;
+    opts->buffer_size = DEFAULT_BUF_SIZE;
 }
 
 
@@ -63,7 +113,7 @@ static void parse_arguments(int argc, char *argv[], struct options *opts)
 {
     int c;
 
-    while((c = getopt(argc, argv, ":i:o:p:P:")) != -1)   // NOLINT(concurrency-mt-unsafe)
+    while((c = getopt(argc, argv, ":i:o:p:P:b:")) != -1)   // NOLINT(concurrency-mt-unsafe)
     {
         switch(c)
         {
@@ -85,6 +135,11 @@ static void parse_arguments(int argc, char *argv[], struct options *opts)
             case 'P':
             {
                 opts->port_out = parse_port(optarg, 10); // NOLINT(cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers)
+                break;
+            }
+            case 'b':
+            {
+                opts->buffer_size = parse_size_t(optarg, 10); // NOLINT(cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers)
                 break;
             }
             case ':':
@@ -133,9 +188,9 @@ static void options_process(struct options *opts)
         int result;
         int option;
 
-        opts->fd_in2 = socket(AF_INET, SOCK_STREAM, 0);
+        opts->fd_in = socket(AF_INET, SOCK_STREAM, 0);
 
-        if(opts->fd_in2 == -1)
+        if(opts->fd_in == -1)
         {
             fatal_errno(__FILE__, __func__ , __LINE__, errno, 2);
         }
@@ -150,25 +205,18 @@ static void options_process(struct options *opts)
         }
 
         option = 1;
-        setsockopt(opts->fd_in2, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(option));
+        setsockopt(opts->fd_in, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(option));
 
-        result = bind(opts->fd_in2, (struct sockaddr *)&addr, sizeof(struct sockaddr_in));
-
-        if(result == -1)
-        {
-            fatal_errno(__FILE__, __func__ , __LINE__, errno, 2);
-        }
-
-        result = listen(opts->fd_in2, BACKLOG);
+        result = bind(opts->fd_in, (struct sockaddr *)&addr, sizeof(struct sockaddr_in));
 
         if(result == -1)
         {
             fatal_errno(__FILE__, __func__ , __LINE__, errno, 2);
         }
 
-        opts->fd_in = accept(opts->fd_in2, NULL, 0);
+        result = listen(opts->fd_in, BACKLOG);
 
-        if(opts->fd_in == -1)
+        if(result == -1)
         {
             fatal_errno(__FILE__, __func__ , __LINE__, errno, 2);
         }
@@ -195,6 +243,11 @@ static void options_process(struct options *opts)
             fatal_errno(__FILE__, __func__ , __LINE__, errno, 2);
         }
 
+        struct timeval tv;
+        tv.tv_sec = 5;
+        tv.tv_usec = 0;
+        setsockopt(opts->fd_out, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
+
         result = connect(opts->fd_out, (struct sockaddr *)&addr, sizeof(struct sockaddr_in));
 
         if(result == -1)
@@ -207,14 +260,9 @@ static void options_process(struct options *opts)
 
 static void cleanup(const struct options *opts)
 {
-    if(opts->file_name)
+    if(opts->file_name || opts->ip_in)
     {
         close(opts->fd_in);
-    }
-    else if(opts->ip_in)
-    {
-        close(opts->fd_in);
-        close(opts->fd_in2);
     }
 
     if(opts->ip_out)
@@ -222,3 +270,29 @@ static void cleanup(const struct options *opts)
         close(opts->fd_out);
     }
 }
+
+
+static void set_signal_handling(struct sigaction *sa)
+{
+    int result;
+
+    sigemptyset(&sa->sa_mask);
+    sa->sa_flags = 0;
+    sa->sa_handler = signal_handler;
+    result = sigaction(SIGINT, sa, NULL);
+
+    if(result == -1)
+    {
+        fatal_errno(__FILE__, __func__ , __LINE__, errno, 2);
+    }
+}
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+static void signal_handler(int sig)
+{
+    running = 0;
+}
+#pragma GCC diagnostic pop
+
