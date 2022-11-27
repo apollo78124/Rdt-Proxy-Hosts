@@ -69,11 +69,11 @@ void copy(int from_fd, int to_fd, size_t count)
         /**
          * Send Ack to client
          */
-         if (getRandNum0To100() > 70) {
+         //if (getRandNum0To100() > 70) {
              wbytes = write(from_fd, ackPacket, strlen(ackPacket));
-         } else {
-             printf("Dropped packet ack for %d ack; \n", bytesReceived);
-         }
+         //} else {
+             //printf("Dropped packet ack for %d ack; \n", bytesReceived);
+         //}
 
         printf("Received and acked data: %d bytes; ", bytesReceived);
         printf("Received packets: %d; ", receivedPackets);

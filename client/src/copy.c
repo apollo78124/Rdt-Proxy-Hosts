@@ -116,10 +116,6 @@ void copy(int from_fd, int to_fd, size_t count)
     {
         fatal_errno(__FILE__, __func__ , __LINE__, errno, 3);
     }
-
-    free(dataToSend);
-    free(outboundPacket);
-    free(receivedPacket);
 }
 
 /**
